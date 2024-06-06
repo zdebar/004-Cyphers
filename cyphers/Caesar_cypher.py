@@ -16,15 +16,15 @@ class CaesarCypher(SimpleDictionaryEncryption):
     name = "Caesar cypher"
 
     def __init__(self):
-        super().__init__(self.create_encryption_dictionary(ENGLISH_ALPHABET))
+        super().__init__(self.create_encryption_dictionary(ENGLISH_ALPHABET, 0))
         logging.debug(self.encryption_key)
         logging.debug(self.decryption_key)
 
     @staticmethod
-    def create_encryption_dictionary(alphabet: str) -> dict:
-        random_shift = randint(1, len(alphabet))
-        logging.debug(random_shift)
-        return {key: alphabet[index-random_shift] for index, key in enumerate(alphabet)}
+    def create_encryption_dictionary(alphabet: str, shift) -> dict:
+        negative_shift = 26 - (shift % 26)
+        logging.debug(negative_shift)
+        return {key: alphabet[index-negative_shift] for index, key in enumerate(alphabet)}
 
 
 if __name__ == "__main__":

@@ -4,23 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd3eab1a-9b42-4c59-9638-75ea834d0231" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cyphers/Caesar_cypher.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cyphers/Morse_code.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cyphers/NATO_alphabet.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cyphers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cyphers/cypher_abstract.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gui/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gui/gui_terminal.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_cypher_abstract.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_helper_functions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_nato_alphabet.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/helper_functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="cd3eab1a-9b42-4c59-9638-75ea834d0231" name="Changes" comment="basic structure">
+      <change afterPath="$PROJECT_DIR$/tests/test_caesar_cypher.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cyphers/Caesar_cypher.py" beforeDir="false" afterPath="$PROJECT_DIR$/cyphers/Caesar_cypher.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cyphers/NATO_alphabet.py" beforeDir="false" afterPath="$PROJECT_DIR$/cyphers/NATO_alphabet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cyphers/cypher_abstract.py" beforeDir="false" afterPath="$PROJECT_DIR$/cyphers/cypher_abstract.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_cypher_abstract.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_cypher_abstract.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_helper_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_helper_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_nato_alphabet.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_nato_alphabet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/helper_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/helper_functions.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,21 +30,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "zdebar"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;zdebar&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/zdebar/006_Cyphers.git",
-    "accountId": "09fb180a-3b5f-471e-aa2c-734cab7e1788"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/zdebar/006_Cyphers.git&quot;,
+    &quot;accountId&quot;: &quot;09fb180a-3b5f-471e-aa2c-734cab7e1788&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2hRz793aDRVAVT7adIBUQWetXoZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -64,12 +57,15 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python tests.Python tests in test_caesar_cypher.py.executor": "Run",
+    "Python tests.Python tests in test_cypher_abstract.py.executor": "Run",
     "Python tests.Python tests in test_helper_functions.py.executor": "Run",
     "Python tests.Python tests in test_nato_alphabet.py.executor": "Run",
     "Python.Caesar_cypher.executor": "Run",
     "Python.Morse_code.executor": "Run",
     "Python.NATO_alphabet.executor": "Run",
     "Python.gui_terminal.executor": "Run",
+    "Python.helper_functions.executor": "Run",
     "Python.main.executor": "Run",
     "Python.scratch_1.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -100,6 +96,19 @@
       <option name="presentableId" value="Default" />
       <updated>1717571508414</updated>
     </task>
+    <task id="LOCAL-00001" summary="basic structure">
+      <option name="closed" value="true" />
+      <created>1717607588879</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1717607588879</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="basic structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="basic structure" />
   </component>
 </project>

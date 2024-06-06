@@ -3,8 +3,9 @@ import logging
 from cyphers.NATO_alphabet import NATOPhoneticAlphabet
 from cyphers.cypher_abstract import EncryptionMethod
 from cyphers.Morse_code import MorseCode
+from cyphers.Caesar_cypher import CaesarCypher
 
-CYPHER_LIST = [NATOPhoneticAlphabet, MorseCode]
+CYPHER_LIST = [NATOPhoneticAlphabet, MorseCode, CaesarCypher]
 
 logging.basicConfig(level=logging.CRITICAL, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 

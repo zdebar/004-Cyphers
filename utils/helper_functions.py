@@ -1,16 +1,14 @@
-def invert_dictionary(input_dict: dict):
-    return {value: key for key, value in input_dict.items()}
+def invert_dictionary(input_dict: dict) -> dict:
+    inverted_dict = {}
+    for key, value in input_dict.items():
 
+        if not isinstance(value, (int, float, str, tuple, frozenset, bytes)):
+            raise TypeError(f"Unhashable value '{value}' of type '{type(value).__name__}' cannot be used as a key.")
 
-def return_non_valid_characters(characters: str or list, test_dict: dict) -> set:
-    non_valid_char = set()
-    for char in characters:
-        if (char != " ") and (char not in test_dict):
-            non_valid_char.add(char)
+        if value in inverted_dict:
+            raise ValueError(
+                f"Duplicate value found for keys '{inverted_dict[value]}' and '{key}' with value '{value}'")
 
-    return non_valid_char
+        inverted_dict[value] = key
 
-
-
-
-
+    return inverted_dict

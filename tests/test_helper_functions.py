@@ -1,5 +1,5 @@
 import pytest
-from utils.helper_functions import invert_dictionary, return_non_valid_characters, all_upper
+from utils.helper_functions import invert_dictionary
 
 
 NATO_ALPHABET = {
@@ -13,20 +13,17 @@ NATO_ALPHABET = {
 }
 
 
-@all_upper
-def decorator_example(x):
-    return x
-
-
-def test_invert_dictionary():
+def test_invert_dictionary_empty():
     assert invert_dictionary({}) == {}
 
 
-def test_return_non_valid_characters():
-    assert return_non_valid_characters("BASIC VALID INPUT", NATO_ALPHABET) == set()
-    assert return_non_valid_characters("Aaá", NATO_ALPHABET) == {"a", "á"}
+def test_invert_dictionary_duplicates():
+    input_dict = {'x': 5, 'y': 5, 'z': 7}
+    with pytest.raises(ValueError, match="Duplicate value found for keys 'x' and 'y' with value '5'"):
+        invert_dictionary(input_dict)
 
 
-def test_decorator():
-    assert decorator_example("lets try some optionS") == "LETS TRY SOME OPTIONS"
-    assert decorator_example(["a", "b"]) == (["A", "B"])
+def test_invert_dictionary_with_unhashable_values():
+    input_dict = {'a': [1, 2], 'b': {3: 4}}
+    with pytest.raises(TypeError, match="Unhashable value '\\[1, 2\\]' of type 'list' cannot be used as a key."):
+        invert_dictionary(input_dict)
