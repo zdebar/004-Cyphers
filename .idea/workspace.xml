@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd3eab1a-9b42-4c59-9638-75ea834d0231" name="Changes" comment="basic structure">
-      <change afterPath="$PROJECT_DIR$/tests/test_caesar_cypher.py" afterDir="false" />
+    <list default="true" id="cd3eab1a-9b42-4c59-9638-75ea834d0231" name="Changes" comment="cyphers, helper functions done">
+      <change afterPath="$PROJECT_DIR$/tests/test_gui.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cyphers/Caesar_cypher.py" beforeDir="false" afterPath="$PROJECT_DIR$/cyphers/Caesar_cypher.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cyphers/NATO_alphabet.py" beforeDir="false" afterPath="$PROJECT_DIR$/cyphers/NATO_alphabet.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cyphers/cypher_abstract.py" beforeDir="false" afterPath="$PROJECT_DIR$/cyphers/cypher_abstract.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_cypher_abstract.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_cypher_abstract.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_helper_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_helper_functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_nato_alphabet.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_nato_alphabet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/helper_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/helper_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/gui_terminal.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/gui_terminal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +67,7 @@
     "Python.scratch_1.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/Active/006_Cyphers/cyphers"
+    "last_opened_file_path": "D:/Active/006_Cyphers"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -104,11 +101,31 @@
       <option name="project" value="LOCAL" />
       <updated>1717607588879</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="cyphers, helper functions done">
+      <option name="closed" value="true" />
+      <created>1717654383703</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1717654383703</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="basic structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="basic structure" />
+    <MESSAGE value="cyphers, helper functions done" />
+    <option name="LAST_COMMIT_MESSAGE" value="cyphers, helper functions done" />
   </component>
 </project>

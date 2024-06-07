@@ -36,7 +36,7 @@ class SimpleDictionaryEncryption(EncryptionMethod):
     def encrypt(self, to_cypher: str or list) -> list:
         self._validate_input(to_cypher)
         logging.debug(f"Input to encrypt: {to_cypher}")
-        return [self.encryption_key.get(char.upper(), "'Invalid Input'") for char in to_cypher]
+        return [self.encryption_key.get(char.upper(), "'Invalid Input'") for char in to_cypher if char != " "]
 
     def decrypt(self, input_value: list or str) -> str:
         self._validate_input(input_value)

@@ -10,8 +10,9 @@ CYPHER_LIST = [NATOPhoneticAlphabet, MorseCode, CaesarCypher]
 logging.basicConfig(level=logging.CRITICAL, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
 
-def intro_screen():
+def run_cypher_utility():
     print(f"\nWelcome to CYPHER UTILITY.\n")
+    select_cypher_from_menu(CYPHER_LIST)
 
 
 def select_cypher_from_menu(my_list: list):
@@ -19,13 +20,16 @@ def select_cypher_from_menu(my_list: list):
     while True:
         for index, item in enumerate(my_list, 1):
             print(f"{index:>2}. {item.name}")
-        chosen_cypher = int(input(f"\nSelect encryption method [1 to {len(my_list)}]: "))
-        if chosen_cypher in range(1, len(CYPHER_LIST) + 1):
-            break
-        else:
-            print("\nInvalid Input. Try again.")
-
-    return my_list[chosen_cypher-1]
+        try:
+            chosen_cypher = input(f"\nSelect encryption method [1 to {len(my_list)}, 'exit']: ")
+            if chosen_cypher.upper() == "EXIT":
+                break
+            strategy = my_list[int(chosen_cypher) - 1]
+            select_cypher_or_decypher(strategy)
+        except IndexError:
+            print("\nInvalid Input. Try again.\n")
+        except ValueError:
+            print("\nInvalid Input. Try again.\n")
 
 
 def select_cypher_or_decypher(strategy: EncryptionMethod):
@@ -33,7 +37,7 @@ def select_cypher_or_decypher(strategy: EncryptionMethod):
     print(f"\nSelected encryption method: {strategy.name}")
 
     while True:
-        option = input(f"Choose between encryption or decryption [e or d]: ")
+        option = input(f"Choose between encryption or decryption [E or D]: ")
         if option.upper() == "E":
             return strategy.encrypt
         if option.upper() == "D":
@@ -53,9 +57,10 @@ def run_encryption(method: EncryptionMethod.encrypt or EncryptionMethod.decrypt)
             print(f"Error: {e}. Please try again.")
 
 
+def validate_input(input_str):
+    pass
+
+
 if __name__ == "__main__":
-    intro_screen()
-    selected_method = select_cypher_from_menu(CYPHER_LIST)
-    strategy_2 = selected_method()
-    selected_strategy = select_cypher_or_decypher(strategy_2)
-    run_encryption(selected_strategy)
+    run_cypher_utility()
+

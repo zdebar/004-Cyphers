@@ -1,7 +1,6 @@
 import logging
 from cyphers.cypher_abstract import SimpleDictionaryEncryption
-from random import randint
-from utils.helper_functions import invert_dictionary
+
 
 ENCRYPTION_TEST_STR = "postman"
 DECRYPTION_TEST_LIST = ['G', 'F', 'J', 'K', 'D', 'R', 'E']
