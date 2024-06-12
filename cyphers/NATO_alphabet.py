@@ -1,6 +1,5 @@
 import logging
-from cyphers.cypher_abstract import SimpleDictionaryEncryption
-from utils.helper_functions import invert_dictionary
+from cyphers.Simple_Dictionary_Cypher import SimpleDictionaryEncryption
 
 ENCRYPTION_TEST_STR = "postman"
 DECRYPTION_TEST_LIST = ['Papa', 'Oscar', 'Sierra', 'Tango', 'Mike', 'Alpha', 'November']
@@ -15,8 +14,6 @@ NATO_ALPHABET = {
     'Y': 'Yankee',  'Z': 'Zulu'
 }
 
-logging.basicConfig(level=logging.CRITICAL, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-
 
 class NATOPhoneticAlphabet(SimpleDictionaryEncryption):
 
@@ -25,9 +22,13 @@ class NATOPhoneticAlphabet(SimpleDictionaryEncryption):
     def __init__(self):
         super().__init__(NATO_ALPHABET)
 
+    def decrypt(self, input_text: list) -> str:
+        logging.debug(f"Input to encrypt: {input_text}")
+        return "".join(self.decryption_key.get(char.upper(), char) for char in input_text if char != " ")
+
 
 if __name__ == "__main__":
     cypher = NATOPhoneticAlphabet()
     print(cypher.encrypt(ENCRYPTION_TEST_STR))
     print(cypher.decrypt(DECRYPTION_TEST_LIST))
-    print(cypher.decrypt("None"))
+

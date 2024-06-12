@@ -4,13 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd3eab1a-9b42-4c59-9638-75ea834d0231" name="Changes" comment="cyphers, helper functions done">
-      <change afterPath="$PROJECT_DIR$/tests/test_gui.py" afterDir="false" />
+    <list default="true" id="cd3eab1a-9b42-4c59-9638-75ea834d0231" name="Changes" comment="7.6.2024">
+      <change afterPath="$PROJECT_DIR$/controller/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/controller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cyphers/Simple_Dictionary_Cypher.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_simple_dictionary_cypher.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cyphers/Caesar_cypher.py" beforeDir="false" afterPath="$PROJECT_DIR$/cyphers/Caesar_cypher.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cyphers/Morse_code.py" beforeDir="false" afterPath="$PROJECT_DIR$/cyphers/Morse_code.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cyphers/NATO_alphabet.py" beforeDir="false" afterPath="$PROJECT_DIR$/cyphers/NATO_alphabet.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cyphers/cypher_abstract.py" beforeDir="false" afterPath="$PROJECT_DIR$/cyphers/cypher_abstract.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/gui_terminal.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/gui_terminal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/gui_terminal.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/ui_terminal.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_caesar_cypher.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_caesar_cypher.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_cypher_abstract.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_cypher_abstract.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_gui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_helper_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_helper_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/helper_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/helper_functions.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,22 +66,28 @@
   "keyToString": {
     "Python tests.Python tests in test_caesar_cypher.py.executor": "Run",
     "Python tests.Python tests in test_cypher_abstract.py.executor": "Run",
+    "Python tests.Python tests in test_gui.py.executor": "Run",
     "Python tests.Python tests in test_helper_functions.py.executor": "Run",
     "Python tests.Python tests in test_nato_alphabet.py.executor": "Run",
+    "Python tests.Python tests in test_simple_dictionary_cypher.py.executor": "Run",
     "Python.Caesar_cypher.executor": "Run",
     "Python.Morse_code.executor": "Run",
     "Python.NATO_alphabet.executor": "Run",
+    "Python.Simple_Dictionary_Cypher.executor": "Run",
+    "Python.controller.executor": "Run",
     "Python.gui_terminal.executor": "Run",
     "Python.helper_functions.executor": "Run",
     "Python.main.executor": "Run",
     "Python.scratch_1.executor": "Run",
+    "Python.ui_terminal.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "D:/Active/006_Cyphers"
+    "last_opened_file_path": "D:/Active/006_Cyphers/controller"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Active\006_Cyphers\controller" />
       <recent name="D:\Active\006_Cyphers\cyphers" />
       <recent name="D:\Active\006_Cyphers\utils" />
       <recent name="D:\Active\006_Cyphers\gui" />
@@ -109,7 +125,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717654383703</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="7.6.2024">
+      <option name="closed" value="true" />
+      <created>1717747017261</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1717747017261</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -126,6 +150,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="basic structure" />
     <MESSAGE value="cyphers, helper functions done" />
-    <option name="LAST_COMMIT_MESSAGE" value="cyphers, helper functions done" />
+    <MESSAGE value="7.6.2024" />
+    <option name="LAST_COMMIT_MESSAGE" value="7.6.2024" />
   </component>
 </project>

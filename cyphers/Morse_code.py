@@ -1,6 +1,5 @@
 import logging
-from cyphers.cypher_abstract import SimpleDictionaryEncryption
-from utils.helper_functions import invert_dictionary
+from cyphers.Simple_Dictionary_Cypher import SimpleDictionaryEncryption
 
 ENCRYPTION_TEST_STR = "postman"
 DECRYPTION_TEST_LIST = ['.--.', '---', '...', '-', '--', '.-', '-.']
@@ -32,5 +31,4 @@ if __name__ == "__main__":
     cypher = MorseCode()
     print(cypher.encrypt(ENCRYPTION_TEST_STR))
     print(cypher.decrypt(DECRYPTION_TEST_LIST))
-    print(cypher.decrypt("None"))
 
