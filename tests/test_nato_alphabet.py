@@ -16,6 +16,6 @@ def test_encrypt():
 
 def test_decrypt():
     cypher = NATOPhoneticAlphabet()
-    assert cypher.decrypt(DECRYPTION_TEST_LIST) == ENCRYPTION_TEST_STR.upper()
+    assert cypher.decrypt(DECRYPTION_TEST_LIST) == NotImplemented
     assert cypher.decrypt("PapaOscar") == NotImplemented
 

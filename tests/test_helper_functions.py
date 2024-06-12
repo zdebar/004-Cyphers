@@ -1,5 +1,5 @@
 import pytest
-from utils.helper_functions import invert_dictionary, ask_for_input
+from utils.helper_functions import invert_dictionary
 
 
 NATO_ALPHABET = {
@@ -18,7 +18,7 @@ def test_invert_dictionary_empty():
 
 
 def test_invert_dictionary_duplicates():
-    input_dict = {'x': 5, 'y': 5, 'z': 7}
+    input_dict = {'x': "5", 'y': "5", 'z': "7"}
     with pytest.raises(ValueError, match="Duplicate value found for keys 'x' and 'y' with value '5'"):
         invert_dictionary(input_dict)
 

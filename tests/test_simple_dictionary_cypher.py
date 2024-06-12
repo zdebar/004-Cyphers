@@ -20,4 +20,4 @@ def test_simple_dictionary_encryption_decrypt_list():
 def test_simple_dictionary_encryption_decrypt_str():
     encryption_dict = {'A': '1', 'B': '2', 'C': '3'}
     sde = SimpleDictionaryEncryption(encryption_dict)
-    assert sde.decrypt("123") =="ABC"
+    assert sde.decrypt("123") == "ABC"
