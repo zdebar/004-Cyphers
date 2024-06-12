@@ -26,6 +26,9 @@ class MorseCode(SimpleDictionaryEncryption):
     def __init__(self):
         super().__init__(MORSE_CODE_DICTIONARY)
 
+    def decrypt(self, input_text: str or list) -> str:
+        return NotImplemented
+
 
 if __name__ == "__main__":
     cypher = MorseCode()

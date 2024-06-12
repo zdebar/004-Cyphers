@@ -17,8 +17,8 @@ class SimpleDictionaryEncryption(EncryptionMethod):
 
     def encrypt(self, input_text: str or list) -> list:
         logging.debug(f"Input to encrypt: {input_text}")
-        return [self.encryption_key.get(char.upper(), char) for char in input_text if char != " "]
+        return [self.encryption_key.get(char.upper(), char) for char in input_text]
 
     def decrypt(self, input_text: str or list) -> str:
         logging.debug(f"Input to decrypt: {input_text}")
-        return "".join(self.decryption_key.get(char.upper(), char) for char in input_text if char != " ")
+        return "".join(self.decryption_key.get(char.upper(), char) for char in input_text)

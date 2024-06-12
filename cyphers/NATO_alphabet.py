@@ -22,9 +22,8 @@ class NATOPhoneticAlphabet(SimpleDictionaryEncryption):
     def __init__(self):
         super().__init__(NATO_ALPHABET)
 
-    def decrypt(self, input_text: list) -> str:
-        logging.debug(f"Input to encrypt: {input_text}")
-        return "".join(self.decryption_key.get(char.upper(), char) for char in input_text if char != " ")
+    def decrypt(self, input_text: str or list) -> str:
+        return NotImplemented
 
 
 if __name__ == "__main__":

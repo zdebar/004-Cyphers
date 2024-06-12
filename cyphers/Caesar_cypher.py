@@ -31,7 +31,7 @@ class CaesarCypher(SimpleDictionaryEncryption):
         self.encryption_key = self.create_encryption_dictionary(ENGLISH_ALPHABET, character_shift)
         self.decryption_key = invert_dictionary(self.encryption_key)
 
-        return "".join(self.encryption_key.get(char.upper(), char) for char in input_text if char != " ")
+        return "".join(self.encryption_key.get(char.upper(), char) for char in input_text)
 
     def decrypt(self, input_text: str or list) -> str:
         logging.debug(f"Input to decrypt: {input_text}")
@@ -41,7 +41,7 @@ class CaesarCypher(SimpleDictionaryEncryption):
         self.encryption_key = self.create_encryption_dictionary(ENGLISH_ALPHABET, character_shift)
         self.decryption_key = invert_dictionary(self.encryption_key)
 
-        return "".join(self.decryption_key.get(char.upper(), char) for char in input_text if char != " ")
+        return "".join(self.decryption_key.get(char.upper(), char) for char in input_text)
 
 
 if __name__ == "__main__":

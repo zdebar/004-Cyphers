@@ -4,23 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd3eab1a-9b42-4c59-9638-75ea834d0231" name="Changes" comment="7.6.2024">
-      <change afterPath="$PROJECT_DIR$/controller/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controller/controller.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cyphers/Simple_Dictionary_Cypher.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_simple_dictionary_cypher.py" afterDir="false" />
+    <list default="true" id="cd3eab1a-9b42-4c59-9638-75ea834d0231" name="Changes" comment="Incorporate Caesar encryption method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cyphers/Caesar_cypher.py" beforeDir="false" afterPath="$PROJECT_DIR$/cyphers/Caesar_cypher.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cyphers/Morse_code.py" beforeDir="false" afterPath="$PROJECT_DIR$/cyphers/Morse_code.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cyphers/NATO_alphabet.py" beforeDir="false" afterPath="$PROJECT_DIR$/cyphers/NATO_alphabet.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cyphers/cypher_abstract.py" beforeDir="false" afterPath="$PROJECT_DIR$/cyphers/cypher_abstract.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/gui_terminal.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/ui_terminal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_caesar_cypher.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_caesar_cypher.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_cypher_abstract.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_cypher_abstract.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_gui.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_gui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_helper_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_helper_functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/helper_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/helper_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cyphers/Simple_Dictionary_Cypher.py" beforeDir="false" afterPath="$PROJECT_DIR$/cyphers/Simple_Dictionary_Cypher.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +122,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717747017261</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Incorporate Caesar encryption method">
+      <option name="closed" value="true" />
+      <created>1718191403935</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1718191403935</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -151,6 +148,7 @@
     <MESSAGE value="basic structure" />
     <MESSAGE value="cyphers, helper functions done" />
     <MESSAGE value="7.6.2024" />
-    <option name="LAST_COMMIT_MESSAGE" value="7.6.2024" />
+    <MESSAGE value="Incorporate Caesar encryption method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Incorporate Caesar encryption method" />
   </component>
 </project>
